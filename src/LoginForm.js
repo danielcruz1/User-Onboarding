@@ -54,12 +54,12 @@ function LoginForm({ values, errors, touched }) {
           axios
             .post("https://reqres.in/api/users", values)
             .then(res => {
-              console.log(res); // Data was created successfully and logs to console
+              console.log(res); 
               resetForm();
               setSubmitting(false);
             })
             .catch(err => {
-              console.log(err); // There was an error creating the data and logs to console
+              console.log(err); 
               setSubmitting(false);
             });
         }
